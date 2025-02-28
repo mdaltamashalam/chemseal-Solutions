@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Chemseal Solutions Pvt. Ltd</title>
+  <script src="https://kit.fontawesome.com/280f5d0d38.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<style>
+  .query-banner {
+      background: linear-gradient(135deg, #005f56 , #073f39 , #609590 , #005f56); /* Gradient red background */
+      color: white; /* White text */
+      text-align: center; /* Center-align text */
+      font-weight: bold;
+      padding: 15px 30px; /* Add more padding */
+      font-size: 18px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for better visibility */
+  }
+  
+  .query-banner i {
+      margin-right: 8px; /* Space between the icon and text */
+      font-size: 20px; /* Icon size */
+  }
+  
+  .phone-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .phone-link:hover {
+      color: #ffeb3b; /* Hover color */
+      transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  @media (max-width: 600px) {
+      .query-banner {
+          font-size: 16px; /* Adjust font size for smaller screens */
+          padding: 10px 20px; /* Reduce padding */
+      }
+  
+      .query-banner i {
+          font-size: 18px; /* Icon size for smaller screens */
+      }
+  }
+
+
+  .featured-banner {
+      border-radius: 12px;
+      border: 3px solid transparent;
+      padding: 10px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .featured-banner img {
+      width: 100%;
+      max-width: 460px;
+      height: auto;
+      border-radius: 8px;
+      border: 3px solid #c8c5c5;
+      box-shadow: 0px 5px 15px rgba(0, 77, 64, 0.3);
+  }
+
+  @media (max-width: 768px) {
+      .featured-banner {
+          margin-left: 0;
+          padding: 5px;
+      }
+
+      .featured-banner img {
+          max-width: 360px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .featured-banner img {
+          max-width: 300px;
+      }
+  }
+
+
+  .About-us {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 90%;
+            margin: 50px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-content {
+            width: 85%;
+        }
+
+        .text-content h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .text-content h2 {
+            font-size: 24px;
+            color: #005f56;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            color: #333;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #005f56;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #098b7e;
+        }
+
+        .image-section {
+            width: 40%;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+
+        .Propertychem {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #fce7e7, #f8f8f8);
+}
+
+.Propertychem h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.Propertychem p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.categories span {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #005f56;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    background: white;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+
+.card .btn {
+    display: inline-block;
+    background-color: #005f56;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card .btn:hover {
+    background-color: #004843;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .categories {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .Propertychem h1 {
+        font-size: 24px;
+    }
+
+    .Propertychem p {
+        font-size: 14px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
+
+.brand-carousel {
+    text-align: center;
+    position: relative;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.brand-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.brand-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.brand-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.brand-item {
+    min-width: 150px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-item img {
+    max-width: 100px;
+    max-height: 140px;
+    transition: transform 0.3s ease;
+}
+
+.brand-item img:hover {
+    transform: scale(1.1);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(27, 27, 27, 0.5);
+    color: rgb(241, 169, 34);
+    border: black;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #e4841d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .brand-item {
+        min-width: 100px;
+    }
+    .brand-item img {
+        max-width: 80px;
+    }
+    .arrow {
+        padding: 8px 12px;
+    }
+}
+
+
+/* Custom Styling */
+.carousel-item {
+            height: 90vh;
+            min-height: 500px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: #ffffff;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            width: 100%;
+            color: #ffffff;
+        }
+
+        .carousel-caption h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .carousel-caption p {
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        .btn-custom {
+            border-radius: 25px;
+            padding: 10px 20px;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .btn-blue {
+            background-color: #007bff;
+            color: white;
+            border: none;
+        }
+
+        .btn-red {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .carousel-caption h1 {
+                font-size: 2rem;
+            }
+            .carousel-caption p {
+                font-size: 1rem;
+            }
+            .btn-custom {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+        }
+        
+
+</style>
+
+<body>
+<br>
+  <!-- Navbar Section Started -->
+  <nav class="navbar">
+    <div class="logo">
+        <a href="#"><img src="/img/logo/New Logo-Photoroom.png" alt="Logo" style="width: 180px; height: 100px;" ></a>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/css/About.html">About Us</a></li>
+      <li><a href="/aboutUs/Product.html">Products</a></li>
+      <li><a href="/ContactUs.html">Contact Us</a></li>
+    </ul>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+<script>
+    function toggleMenu() {
+        let navLinks = document.getElementById('navLinks');
+        let menuToggle = document.querySelector('.menu-toggle');
+
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    }
+</script>
+
+  <!-- Navbar Section Finished -->
+
+  
+
+
+
+
+ <!-- Carousel -->
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('/img/banner3.jpg');">
+          <div class="carousel-caption">
+              <h3>100% WATERPROOFING SOLUTIONS</h3>
+              <h1>We protect your places from water dropping or leakage.</h1>
+              <div>
+                  <button class="btn btn-custom btn-blue">Learn More</button>
+                  <button class="btn btn-custom btn-red" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSdC3t1iug_xMdi1QTDfXRmsG2AzS1JK9mptwW2UqqBFP1OuyQ/viewform?usp=sharing'">
+                    Contact Us
+                </button>                
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="query-banner">
+    <p>Contact us : <i class="fa-solid fa-phone"></i><a href="tel:+91- 8448224244" class="phone-link">+91- 8448224244</a></p>
+  </div>
+
+
+  
+
+  <!-- Navigation Buttons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+
+
+  <div class="About-us">
+    <div class="text-content">
+      <h1>Welcome to CHEMSEAL Solutions</h1>
+            <h2>We offer comprehensive range of products & services to protect structures from water damage effectively</h2>
+            <p>CHEMSEAL Solutions is a pioneering company established in 2025 and dedicated to providing innovative solutions for waterproofing needs across various industries. With a commitment to excellence and a focus on quality, CHEMSEAL Solutions has established itself as a trusted name in the realm of waterproofing solutions.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+    <!-- <div class="image-section">
+        <img src="/img/About image.webp" style=" margin-left: 2rem; width: 460px; height: 360px; border-radius: 8px; border: 3px solid #c8c5c5; box-shadow: 0px 5px 15px rgba(0, 77, 64, 0.3) "  alt="Waterproofing Protection">
+    </div> -->
+</div>
+
+
+
+
+
+<div class="Propertychem">
+  <h1>Protect Your Property</h1>
+  <p>and save your unwanted expenses with our comprehensive waterproofing products & services.</p>
+  <p>From basement waterproofing to roof coatings, we offer a comprehensive range of waterproofing products and services to protect your property from water damage effectively.</p>
+  
+  <h3>Are you facing?</h3>
+
+  <div class="categories">
+      <span>Wall Damp</span>
+      <span>Roof Leakage</span>
+      <span>Wall Leakage</span>
+      <span>Waterproofing</span>
+  </div>
+
+  <div class="cards-container">
+      <div class="card">
+          <img src="/img/Polyurethane-Coating.jpg" alt="Waterproofing Products">
+          <h2>Waterproofing Products</h2>
+          <p>We offer all types of Waterproofing Chemicals</p>
+          <a href="#" class="btn">View Products</a>
+      </div>
+
+      <div class="card">
+          <img src="/img/Waterproofing.jpg" alt="Waterproofing Services">
+          <h2>Waterproofing Services</h2>
+          <p>We protect your places from water dropping or Others.</p>
+          <a href="#" class="btn">View Services</a>
+      </div>
+      <div class="card">
+        <img src="/img/Ser 2.jpg" alt="Waterproofing Products">
+        <h2>Repair and Rehabilitation</h2>
+        <p>Repair and rehabilitation restore damaged structures by addressing cracks</p>
+        <a href="#" class="btn">View Products</a>
+    </div>
+
+    <div class="card">
+        <img src="/img/ser 6.jpg" alt="Waterproofing Services">
+        <h2>Protective Coatings</h2>
+        <p>We protect your places from water dropping or Others.</p>
+        <a href="#" class="btn">View Services</a>
+    </div>
+  </div>
+</div>
+
+  <!-- Services Section Started -->
+  <section>
+    <h2 class="services-heading" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+      Products for You 
+    </h2>
+    <div class="services-box" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+      <div class="servicesection-image">
+        <img src="/img/Ser1.jpg" alt="General Construction Image" />
+        <h3> Waterproofing </h3>
+        <p>
+          Waterproofing ensures buildings and structures remain resistant to water infiltration, preventing damage and prolonging durability. It involves advanced techniques like membrane coatings, sealants, and cementitious waterproofing to protect against moisture penetration. Proper waterproofing safeguards foundations, walls, and roofs from leaks, mold, and structural deterioration.
+        </p>
+      </div>
+      <div class="servicesection-image">
+        <img src="/img/Ser 2.jpg" alt="construction management" />
+        <h3>Repair and Rehabilitation</h3>
+        <p>
+          Repair and rehabilitation restore damaged structures by addressing cracks, corrosion, and deterioration, ensuring safety and longevity. Techniques include structural strengthening, concrete repair, and retrofitting to enhance performance. Effective rehabilitation minimizes risks and extends the life of buildings and infrastructure.
+        </p>
+      </div>
+      <div class="servicesection-image">
+        <img src="/img/Ser3.jpg" alt="design-and-build" />
+        <h3>Insulation</h3>
+        <p>
+          Insulation improves energy efficiency by reducing heat transfer in buildings, keeping interiors comfortable. It includes thermal, acoustic, and moisture-resistant insulation for walls, roofs, and floors. Proper insulation lowers energy costs, prevents condensation, and enhances overall building sustainability.
+        </p>
+      </div>
+      <div class="servicesection-image">
+        <img src="/img/Ser 4.jpg" alt="preconstruction" />
+        <h3>Expansion Joints</h3>
+        <p>
+          Expansion joints allow controlled movement in structures due to temperature changes, load variations, and seismic activity. They prevent cracks and structural stress by accommodating expansion and contraction. High-quality expansion joint systems ensure durability, flexibility, and long-term performance in buildings and bridges.
+        </p>
+      </div>
+      <div class="servicesection-image">
+        <img src="/img/ser 5.jpg" alt="special-projects" />
+        <h3>Epoxy Flooring System</h3>
+        <p>
+          Epoxy flooring systems provide durable, seamless, and chemical-resistant surfaces for industrial, commercial, and residential spaces. These coatings enhance aesthetics, improve safety with anti-slip properties, and withstand heavy traffic. Epoxy floors are easy to maintain, long-lasting, and ideal for warehouses, hospitals, and garages.
+        </p>
+      </div>
+      <div class="servicesection-image">
+        <img src="/img/ser 6.jpg" alt="renovation" />
+        <h3>Protective Coatings</h3>
+        <p>
+          Protective coatings shield surfaces from corrosion, abrasion, and environmental damage, enhancing longevity and performance. They include polymer, polyurethane, and anti-corrosion coatings for metal, concrete, and wood surfaces. These coatings provide superior resistance to chemicals, moisture, and UV exposure, ensuring durability in harsh conditions.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+  <!-- BUILD WITH QYALITY SECTION -->
+  <div class="container-buildquality">
+    <div class="content-quality">
+      <img class="image-quality" src="./img/vectors/build-with-quality.webp" alt="Image- build-with-quality"
+        data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000" />
+      <div class="text-qualitymaterial" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Build With Quality Materials</h1>
+        <p>
+          Every project we work on we always use selected materials to give
+          good quality to the building and that's what many of our customers
+          feel after working with us, their buildings are more sturdy and
+          durable.
+        </p>
+
+        <div>
+          <div class="button-container">
+            <button class="button-material" onclick="window.location.href = './aboutUs';">
+              <span> Read More </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- BUILD WITH QUALITY ENDS -->
+
+
+
+  <!-- Why Choose us Section Started -->
+  <section class="whyChooseUs-section">
+    <div class="whychooseus-overlay">
+      <div class="whychooseus-container">
+        <div class="whychooseus-row">
+          <div class="whychooseus-coloumn" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+            <h2>Why Choose us?</h2>
+            <hr />
+            <br />
+          </div>
+        </div>
+        <div class="whychooseus-row" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+          <div class="whychooseus-block">
+            <i class="fa-solid fa-check"></i>
+            <div class="whychooseus-coloumn">
+              <h3>Professional Staff</h3>
+              <p>
+                Our staff members are experts in their respective fields and
+                are committed to providing exceptional service to our clients.
+              </p>
+            </div>
+          </div>
+
+          <div class="whychooseus-block">
+            <i class="fa-solid fa-check"></i>
+            <div class="whychooseus-coloumn">
+              <h3>Save Time and Money</h3>
+              <p>
+                We understand that your time is valuable, which is why we
+                offer efficient and convenient solutions that can streamline
+                your daily tasks.
+              </p>
+            </div>
+          </div>
+
+          <div class="whychooseus-block">
+            <i class="fa-solid fa-check"></i>
+            <div class="whychooseus-coloumn">
+              <h3>Detailed Estimated</h3>
+              <p>
+                We provide comprehensive breakdowns of costs and expenses
+                associated with our products and services.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="whychooseus-row" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
+          <div class="whychooseus-block">
+            <i class="fa-solid fa-check"></i>
+            <div class="whychooseus-coloumn">
+              <h3>On Time Completion</h3>
+              <p>
+                With our commitment to on-time completion, you can be
+                confident that your projects and services will be delivered
+                promptly and to your satisfaction.
+              </p>
+            </div>
+          </div>
+
+          <div class="whychooseus-block">
+            <i class="fa-solid fa-check"></i>
+            <div class="whychooseus-coloumn">
+              <h3>No Hidden Cost</h3>
+              <p>
+                Honesty and clarity are crucial when it comes to pricing, and
+                we strive to ensure that our customers are fully informed of
+                all costs associated with our services.
+              </p>
+            </div>
+          </div>
+
+          <div class="whychooseus-block">
+            <i class="fa-solid fa-check"></i>
+            <div class="whychooseus-coloumn">
+              <h3>Zero Complaints</h3>
+              <p>
+                Our commitment to quality and customer satisfaction is
+                reflected in our track record of zero complaints.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Why Choose Us Section Finished -->
+
+
+  <!-- General Info Section Finieshed -->
+
+  <!-- Talk with Experts Section starts  -->
+  <section class="container-expert">
+    <div class="content-1">
+      <img data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000" class="image-1"
+        src="./img/vectors/customer1.png" alt="Image-Talk with expert person" />
+      <div class="text-contact" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Contact With Our Experts</h1>
+        <p>
+          Book your appointment to talk to our experts who will assist you
+          with all your doubts regarding our services.
+        </p>
+        <div>
+          <div class="button-container">
+            <button class="button-1" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdC3t1iug_xMdi1QTDfXRmsG2AzS1JK9mptwW2UqqBFP1OuyQ/viewform?usp=sharing'">
+              <span> <i class="fa fa-phone"></i> Contact</span>
+            </button>
+
+            <button class="button-1" id="form-open" onclick="window.location.href = '#';">
+              <span> <i class="fa fa-calendar"></i> Book Us</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Talk with Experts Section ends  -->
+
+  <!-- Testimonials Start -->
+  <section class="testimonials">
+    <div style="display: flex; justify-content: center; align-items: center">
+      <div class="testinomial-header" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <h1>Our Clients Say!</h1>
+        <p>
+          Our customer satisfaction is our top priority. To do this, we pay
+          attention to your concerns, difficulties, and ambitions and
+          concentrate our efforts to ensure that we offer a high-quality
+          building, on time and within budget, taking into account your most
+          crucial aims.
+        </p>
+      </div>
+    </div>
+
+    <div class="testinomial-container">
+      <div class="testinomial-card" id="testinomial-card-101" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="testinomial-card-head">
+          <img src="./img/vectors/user.webp" alt="img" />
+          <div style="line-height: 1.4; font-size: 0.9rem">
+            <h3>Rohan Sharma</h3>
+            <p><a href="http://">@rohan_s123</a></p>
+          </div>
+        </div>
+        <p>
+          The team at CHEMSEAL Solutions is highly professional, knowledgeable, and dedicated to delivering exceptional results. From the very beginning, I was impressed with their attention to detail and commitment to quality.
+        </p>
+      </div>
+    
+      <div class="testinomial-card" id="testinomial-card-102" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="testinomial-card-head">
+          <img src="./img/vectors/user.webp" alt="img" />
+          <div style="line-height: 1.4; font-size: 0.9rem">
+            <h3>Amit Verma</h3>
+            <p><a href="http://">@amit_verma99</a></p>
+          </div>
+        </div>
+        <p>
+          Throughout the project, the team at CHEMSEAL Solutions demonstrated a high level of expertise, and their workmanship was top-notch. They were able to navigate the complexities of the project with ease.
+        </p>
+      </div>
+    
+      <div class="testinomial-card" id="testinomial-card-103" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="testinomial-card-head">
+          <img src="./img/vectors/user.webp" alt="img" />
+          <div style="line-height: 1.4; font-size: 0.9rem">
+            <h3>Sneha Gupta</h3>
+            <p><a href="http://">@sneha_g23</a></p>
+          </div>
+        </div>
+        <p>
+          What impressed me the most was their focus on customer service. The team at Cheamseal Solutions was always available to answer my questions and provide updates, making the process smooth.
+        </p>
+      </div>
+    
+      <div class="testinomial-card" id="testinomial-card-104" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="testinomial-card-head">
+          <img src="./img/vectors/user.webp" alt="img" />
+          <div style="line-height: 1.4; font-size: 0.9rem">
+            <h3>Rajesh Nair</h3>
+            <p><a href="http://">@rajesh_nair</a></p>
+          </div>
+        </div>
+        <p>
+          I would highly recommend CHEMSEAL Solutions for any construction project. Their professionalism, efficiency, and dedication to customer service make them the best in the business.
+        </p>
+      </div>
+    
+      <div class="testinomial-card" id="testinomial-card-105" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="testinomial-card-head">
+          <img src="./img/vectors/user.webp" alt="img" />
+          <div style="line-height: 1.4; font-size: 0.9rem">
+            <h3>Ananya Mehta</h3>
+            <p><a href="http://">@ananya_mehta</a></p>
+          </div>
+        </div>
+        <p>
+          The team was skilled, experienced, and attentive to detail. They worked tirelessly to ensure that every aspect of the project was completed to my satisfaction.
+        </p>
+      </div>
+    
+      <div class="testinomial-card" id="testinomial-card-106" data-aos="fade-left" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="testinomial-card-head">
+          <img src="./img/vectors/user.webp" alt="img" />
+          <div style="line-height: 1.4; font-size: 0.9rem">
+            <h3>Vikram Singh</h3>
+            <p><a href="http://">@vikram_singh</a></p>
+          </div>
+        </div>
+        <p>
+          CHEMSEAL Solutions turned my vision into reality with their expertise and dedication. Their innovative approach and transparency throughout the project were truly commendable.
+        </p>
+      </div>
+    
+      <div class="testinomial-card" id="testinomial-card-107" data-aos="fade-right" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="testinomial-card-head">
+          <img src="./img/vectors/user.webp" alt="img" />
+          <div style="line-height: 1.4; font-size: 0.9rem">
+            <h3>Priya Malhotra</h3>
+            <p><a href="http://">@priya_malhotra</a></p>
+          </div>
+        </div>
+        <p>
+          A seamless experience with CHEMSEAL Solutions! Their team was professional, efficient, and truly cared about delivering high-quality work. I'm beyond satisfied with the final results.
+        </p>
+      </div>
+    
+      <div class="testinomial-card" id="testinomial-card-108" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="testinomial-card-head">
+          <img src="./img/vectors/user.webp" alt="img" />
+          <div style="line-height: 1.4; font-size: 0.9rem">
+            <h3>Arjun Patel</h3>
+            <p><a href="http://">@arjun_patel</a></p>
+          </div>
+        </div>
+        <p>
+          CHEMSEAL Solutions exceeded my expectations in every way! Their team was highly skilled, efficient, and delivered outstanding results ahead of schedule. Highly recommended!
+        </p>
+      </div>
+    </div>
+    
+    
+
+  </section>
+  <!-- Testimonials End -->
+
+  <!-- FAQ starts -->
+  <section class="faq">
+    <div class="faq-heading">
+      <h1>FAQs</h1>
+    </div>
+    <div class="faq-content">
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500">
+        <div class="faq-question">
+          <h2>1. What services does CHEMSEAL SOLUTIONS offer?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            We provide a wide range of services, including waterproofing, protective coatings, insulation, repair and rehabilitation, expansion joints, epoxy flooring systems, and general construction consultancy.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1000">
+        <div class="faq-question">
+          <h2>2. Why should I choose CHEMSEAL SOLUTIONS for waterproofing?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            We specialize in high-quality waterproofing solutions, using advanced materials and techniques. Our expert team ensures long-lasting protection against water damage, preventing issues like wall dampness, roof leakage, and structural deterioration.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
+        <div class="faq-question">
+          <h2>3. How long does a typical waterproofing project take?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            The duration varies based on the scope of work. Minor repairs may take a few days, while full-scale waterproofing for buildings can take a few weeks. Our team provides a detailed project timeline before starting work.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2000">
+        <div class="faq-question">
+          <h2>4. Do you offer consultation services for waterproofing and repairs?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            Yes, we provide professional consultation to assess your property’s needs and recommend the best waterproofing, protective coatings, or repair solutions.
+          </p>
+        </div>
+      </div>
+      <div class="faq-block" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="2500">
+        <div class="faq-question">
+          <h2>5. What is the best waterproofing solution for walls and roofs?</h2>
+          <i class="fa-solid fa-plus fa-xl"></i>
+        </div>
+        <div class="faq-answer">
+          <p>
+            For walls, we recommend high-quality sealants and membrane coatings, while for roofs, we use advanced waterproofing coatings and solutions tailored to your structure’s needs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FAQ end -->
+
+
+  <br>
+  <br><br><br><br>
+  <!-- Hire Us Section End -->
+
+  
+
+  
+  <!-- Brand is Start Here -->
+<!-- Brand Carousel -->
+<div class="brand-carousel">
+  <h2 class="brand-title">Brands</h2>
+  <div class="arrow prev" onclick="moveSlide(-1)">&#10094;</div>
+  <div class="brand-container">
+      <div class="brand-track">
+          <div class="brand-item"><img src="/img/L1.jpg" alt="BASF"></div>
+          <div class="brand-item"><img src="/img/L2.jpg" alt="SSPL"></div>
+          <div class="brand-item"><img src="/img/Ecmas-Logo.jpg" alt="Fosroc"></div>
+          <div class="brand-item"><img src="/img/L7.jpg" alt="Dr. Fixit"></div>
+          <div class="brand-item"><img src="/img/L4.jpg" alt="FixGuru"></div>
+          <div class="brand-item"><img src="/img/L5.jpg" alt="Sika"></div>
+          <div class="brand-item"><img src="/img/L3.jpg" alt="Bostik"></div>
+          <div class="brand-item"><img src="/img/MYK-Arment_PANTONE.png" alt="Dr. Fixit"></div>
+          <div class="brand-item"><img src="/img/L8.jpg" alt="FixGuru"></div>
+          <div class="brand-item"><img src="/img/L9.jpg" alt="Sika"></div>
+          <div class="brand-item"><img src="/img/Ecmas-Logo.jpg" alt="Bostik"></div>
+      </div>
+  </div>
+  <div class="arrow next" onclick="moveSlide(1)">&#10095;</div>
+</div>
+
+<!-- Dots Navigation -->
+<div class="dots">
+  <span class="dot" onclick="setSlide(0)"></span>
+  <span class="dot" onclick="setSlide(1)"></span>
+  <span class="dot" onclick="setSlide(2)"></span>
+  <span class="dot" onclick="setSlide(3)"></span>
+  <span class="dot" onclick="setSlide(4)"></span>
+  <span class="dot" onclick="setSlide(5)"></span>
+  <span class="dot" onclick="setSlide(6)"></span>
+  <span class="dot" onclick="setSlide(7)"></span>
+  <span class="dot" onclick="setSlide(8)"></span>
+  <span class="dot" onclick="setSlide(9)"></span>
+  <span class="dot" onclick="setSlide(10)"></span>
+</div>
+
+
+
+
+
+
+<div class="query-banner">
+  <p>Contact us : <i class="fa-solid fa-phone"></i><a href="tel:+91- 8448224244" class="phone-link">+91- 8448224244</a></p>
+</div>
+  <!-- Footer Section Started -->
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col footer-brand">
+              <div class="footer-logo" style="margin-bottom: 2rem; font-size: 1.5rem; font-weight: bold; color: #005f56;">
+                <span>CHEMSEAL SOLUTIONS </span>
+                <p style="font-size: medium; color: #0f0135; font-weight: lighter;">
+                    With a commitment to excellence and a focus on quality, CHEMSEAL Solutions has established itself as a trusted name in the realm of waterproofing solutions.
+                </p>
+              </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col service">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Wall Damp</a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Roof Leakage</a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Consultancy Services</a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Wall Leakage</a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Waterproofing </a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Protective Coatings </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col repair">
+              <h4>Products</h4>
+              <ul>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Waterproofing Coating</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> APP EPDM HDPE </a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Flexible Acrylic Coating</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Tile Joint Filler</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Curing Compound</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Tile Adhesive or Others</a></li>
+            </ul>
+          </div>
+
+            <div class="footer-col contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:ChemsealSolutions@gmail.com"><i class="fa-solid fa-envelope"></i> info@chemseal.co.in</a></li>
+                    <li><a href="tel:+919636243488"><i class="fa-solid fa-phone"></i> +91-8448224244</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr style="margin: 0 auto; width: 90%; margin-top: 10px;" />
+        <div class="bottom" style="text-align: center; margin-top: 5px;">
+            <p>&copy; 2025 Chemseal Solutions Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+  <!-- Footer Section Finished -->
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+const track = document.querySelector(".brand-track");
+const items = document.querySelectorAll(".brand-item");
+const totalSlides = items.length;
+let currentIndex = 0;
+
+function moveSlide(direction) {
+    currentIndex += direction;
+    if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    } else if (currentIndex >= totalSlides) {
+        currentIndex = 0;
+    }
+    updateSlide();
+}
+
+function setSlide(index) {
+    currentIndex = index;
+    updateSlide();
+}
+
+function updateSlide() {
+    const slideWidth = items[0].clientWidth + 20;
+    track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    document.querySelectorAll(".dot").forEach((dot, i) => {
+        dot.classList.toggle("active", i === currentIndex);
+    });
+}
+
+function autoSlide() {
+    moveSlide(1);
+    setTimeout(autoSlide, 3000); // Move slide every 3 seconds
+}
+
+autoSlide();
+
+  </script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheamseal Solutions - Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  background: linear-gradient(135deg, #ffffff, #f3f7ff);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 75px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #005f56;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background-color: #fa9a24;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icons a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #333;
+  padding: 8px;
+  
+  transition: all 0.3s ease-in-out;
+}
+
+.icons a:hover {
+  background-color: #007bff;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-toggle.active {
+  transform: rotate(90deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: 100vh;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: all 0.4s ease-in-out;
+      padding-top: 40px;
+  }
+
+  .nav-links.active {
+      left: 0;
+  }
+
+  .nav-links li {
+      margin: 20px 0;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+}
+
+/* Navbar End  */
+        .hero-section {
+            background: linear-gradient(#469b93  #005f56  #2ba498  #519f98  url('https://source.unsplash.com/1600x900/?construction,services') center/cover);
+            height: 25vh;
+            color: #005f56;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .service-card {
+            transition: 0.3s;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background: #f8f9fa;
+        }
+        .service-card i {
+            font-size: 40px;
+            color: #005f56 ;
+            margin-bottom: 15px;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .btn-book {
+            background-color: #005f56 ;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        .btn-book:hover {
+            background-color: #005f56 ;
+        }
+
+        /* Footer START */
+.footer {
+  background-color: #1c55a416;
+  padding: 70px 0;
+  padding-top: 160px;
+}
+.container {
+  max-width: 1250px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  padding: 0 20px;
+}
+.footer-col h4 {
+  font-size: 16px;
+  color: #0f0135;
+  margin-bottom: 30px;
+  line-height: 0.5rem;
+  font-weight: 600;
+  position: relative;
+}
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-image: linear-gradient(to right,#cde2ff,#1c55a4);
+  height: 2.25px;
+  box-sizing: border-box;
+  width: 50px;
+  transition: 0.5s ease-in-out;
+  border-radius: 40%;
+}
+
+/* hover on heading in footer */
+
+.footer-col h4{
+  transition: 0.5s ease-in-out;
+ }
+ .footer-col h4:hover{
+   letter-spacing: 0.25rem;
+   cursor: pointer;
+ }
+ 
+ .footer-col h4:hover::before {
+   background-color:#0b9c8d;
+   width: 80px;
+ }
+
+
+.footer-col ul li {
+  margin-bottom: 15px;
+}
+.footer-col ul li a {
+  font-size: 15px;
+  font-weight: 400;
+  color: #1d0f44ad;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #0f0135;
+  padding-left: 8px;
+}
+.footer-brand {
+  text-align: center;
+  width: 36%;
+  line-height: 1.5;
+  color: #0f0135;
+}
+.footer-logo {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+.footer-logo img {
+  transform: scale(1.7);
+  width: 200px;
+  height: 200px;
+  /* margin: -150px 0px 0px -150px; */
+}
+.service {
+  width: 23%;
+}
+.repair {
+  width: 18%;
+}
+.contact {
+  width: 23%;
+}
+.social-links {
+  margin-left: 10px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 255, 255);
+  margin: 10px 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #0f0135;
+  border-radius: 50%;
+  color: #0f0135;
+  transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:nth-child(1):hover {
+  color: #ffffff;
+  background-color: #005f56;
+  border: none;
+}
+.footer-col .social-links a:nth-child(2):hover {
+  color: #ffffff;
+  background: #005f56;
+  border: none;
+}
+.footer-col .social-links a:nth-child(3):hover {
+  color: #ffffff;
+  background: #e1306c;
+  border: none;
+}
+.footer-col .social-links a:nth-child(4):hover {
+  color: #ffffff;
+  background: #005f56;
+  border: none;
+}
+.footer-copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(23, 5, 57, 0.58);
+}
+.footer-copyright a {
+  color: #1d0f44ad;
+  transition: all 0.3s ease;
+}
+.footer-copyright a:hover {
+  color: #0f0135;
+  padding: 3px;
+}
+@media (max-width: 920px) {
+  .footer-col {
+    width: 20%;
+    margin-bottom: 30px;
+  }
+
+  .footer-brand {
+    width: 30%;
+  }
+  .footer-logo img {
+    transform: scale(1.15);
+  }
+
+  .footer-col .social-links a {
+    margin: 30px 25px 10px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-col {
+    width: 100%;
+  }
+  .footer-logo img {
+    transform: scale(1.5);
+  }
+  .footer-col .social-links a {
+    margin: 30px 25px 10px 0px;
+  }
+}
+@media (max-width:425px){
+  .social-links {
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .footer-col .social-links a{
+    margin-right: 0;
+  }
+}
+/* FOOTER END */
+
+
+.query-banner {
+      background: linear-gradient(135deg, #005f56 , #073f39 , #609590 , #005f56); /* Gradient red background */
+      color: white; /* White text */
+      text-align: center; /* Center-align text */
+      font-weight: bold;
+      padding: 15px 30px; /* Add more padding */
+      font-size: 18px;
+      
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for better visibility */
+  }
+  
+  .query-banner i {
+      margin-right: 8px; /* Space between the icon and text */
+      font-size: 20px; /* Icon size */
+  }
+  
+  .phone-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .phone-link:hover {
+      color: #ffeb3b; /* Hover color */
+      transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  @media (max-width: 600px) {
+      .query-banner {
+          font-size: 16px; /* Adjust font size for smaller screens */
+          padding: 10px 20px; /* Reduce padding */
+      }
+  
+      .query-banner i {
+          font-size: 18px; /* Icon size for smaller screens */
+      }
+  }
+
+
+  .featured-banner {
+      border-radius: 12px;
+      border: 3px solid transparent;
+      padding: 10px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .featured-banner img {
+      width: 100%;
+      max-width: 460px;
+      height: auto;
+      border-radius: 8px;
+      border: 3px solid #c8c5c5;
+      box-shadow: 0px 5px 15px rgba(0, 77, 64, 0.3);
+  }
+
+  @media (max-width: 768px) {
+      .featured-banner {
+          margin-left: 0;
+          padding: 5px;
+      }
+
+      .featured-banner img {
+          max-width: 360px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .featured-banner img {
+          max-width: 300px;
+      }
+  }
+
+  /* Service Start */
+.services-heading {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+.services-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.servicesection-image {
+  width: calc(31%);
+  margin: 20px 0px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.servicesection-image img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.servicesection-image:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.servicesection-image h3 {
+  margin: 20px 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.servicesection-image p {
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Chivo', sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .servicesection-image {
+    width: calc(50% - 20px);
+  }
+  .services-heading {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesection-image {
+    width: 100%;
+  }
+  .services-heading {
+    font-size: 30px;
+  }
+}
+/* Service End */
+
+.contact-section {
+        text-align: center;
+        padding: 50px 20px;
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .contact-details {
+        margin-top: 20px;
+    }
+
+    .contact-item {
+        margin-bottom: 15px;
+    }
+
+    .contact-item h3 {
+        color: #046c5c;
+    }
+
+    .btn-contact {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background-color: #046c5c;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .btn-contact:hover {
+        background-color: #046c5c;
+    }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section Started -->
+<!-- Navbar Section Started -->
+!-- Navbar Section Started
+<nav class="navbar">
+  <div class="logo">
+      <a href="#"><img src="/img/logo/New Logo-Photoroom.png" alt="Logo" style="width: 180px; height: 100px;"></a>
+  </div>
+  
+
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/css/About.html">About Us</a></li>
+    <li><a href="/aboutUs/Product.html">Products</a></li>
+    <li><a href="/ContactUs.html">Contact Us</a></li>
+  </ul>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+</nav>
+
+<script>
+  function toggleMenu() {
+      let navLinks = document.getElementById('navLinks');
+      let menuToggle = document.querySelector('.menu-toggle');
+
+      navLinks.classList.toggle('active');
+      menuToggle.classList.toggle('active');
+  }
+</script>
+
+<!-- Navbar Section Finished -->
+  <!-- Navbar Section Finished -->
+   <br>
+   <br><br><br><br><br>
+    
+<!-- Contact Section -->
+<section class="contact-section">
+    <h2 style="color: #046c5c;">Contact Us</h2>
+    <p>Get in touch with us for expert advice and reliable waterproofing solutions.</p>
+
+    <div class="contact-details">
+        <div class="contact-item">
+            <h3>📍 Address</h3>
+            <p>CHEMSEAL Solutions Pvt. Ltd.<br> Thokar7 abul fazal enclave- II , Okhla , New delhi 110025, India</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>📞 Phone</h3>
+            <p>+91-8448224244</p>
+        </div>
+
+        <div class="contact-item">
+            <h3>📧 Email</h3>
+            <p>info@chemseal.co.in</p>
+        </div>
+    </div>
+
+    <!-- Contact with Agent Button -->
+    <div class="contact-button">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdC3t1iug_xMdi1QTDfXRmsG2AzS1JK9mptwW2UqqBFP1OuyQ/viewform?usp=sharing" class="btn-contact">Contact an Agent</a>
+    </div>
+</section>
+
+<br>
+
+
+<!-- Footer Section Started -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col footer-brand">
+              <div class="footer-logo" style="margin-bottom: 2rem; font-size: 1.5rem; font-weight: bold; color: #005f56;">
+                <span>CHEMSEAL SOLUTIONS</span>
+                <p style="font-size: medium; color: #0f0135; font-weight: lighter;">
+                    With a commitment to excellence and a focus on quality, CHEMSEAL Solutions has established itself as a trusted name in the realm of waterproofing solutions.
+                </p>
+              </div>
+                
+            </div>
+
+            <div class="footer-col service">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Wall Damp</a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Roof Leakage</a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Consultancy Services</a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Wall Leakage</a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Waterproofing </a></li>
+                    <li><a href=""><i class="fa-solid fa-angle-right"></i> Protective Coatings </a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col repair">
+              <h4>Products</h4>
+              <ul>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Waterproofing Coating</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> APP EPDM HDPE </a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Tile Joint Filler</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Curing Compound</a></li>
+                <li><a href=""><i class="fa-solid fa-angle-right"></i> Tile Adhesive or Others</a></li>
+            </ul>
+          </div>
+
+            <div class="footer-col contact">
+                <h4>Contact</h4>
+                <ul>
+                  <li><a href="mailto:ChemsealSolutions@gmail.com"><i class="fa-solid fa-envelope"></i> info@chemseal.co.in</a></li>
+                  <li><a href="tel:+919636243488"><i class="fa-solid fa-phone"></i> +91-8448224244</a></li>
+              </ul>
+            </div>
+        </div>
+
+        <hr style="margin: 0 auto; width: 90%; margin-top: 10px;" />
+        <div class="bottom" style="text-align: center; margin-top: 5px;">
+            <p>&copy; 2025 Chemseal Solutions Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
